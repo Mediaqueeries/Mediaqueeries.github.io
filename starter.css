@@ -1,0 +1,79 @@
+header {
+    width: 100%;
+    position: fixed;
+    padding: 10px;
+    top: 0; left: 0;
+}
+
+.logo{
+    background: black;
+    display: inline;
+    color: white;
+    padding: 10px 0 10px 10px;
+    /* top: 30%; */
+    /* left: 30%; */
+    font-size: 1.25em;
+    font-family: futura, helvetica;
+    font-weight: bold;
+    -webkit-font-smoothing: auto;
+}
+
+.logo--big {
+    display: none;
+}
+
+.logo--queeries{
+    padding: 10px 10px 11px 7px;
+    margin-left: 5px;
+    background: linear-gradient(270deg, #ff0000, #e2e343, #46de2a, #24e1d7, #0059ff, #ff00ef);
+
+    background-size: 1200% 1200%;
+
+    -webkit-animation: AnimationName 10s ease infinite;
+    -moz-animation: AnimationName 10s ease infinite;
+    animation: AnimationName 10s ease infinite;
+
+}
+
+
+@-webkit-keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@-moz-keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+
+@media (min-width: 900px) {
+    .logo--big {
+        display: inline;
+    }
+}
+
+/* --- End Header Section Stuff ---- */
+
+#title, #subtitle {
+    text-align: center;
+}
+
+section {
+    font-family: monospace;
+    font-size: 2em;
+}
+
+.wrap {
+    padding: 0 15%;
+}
+
+.wrap--first {
+    margin-top: 2em;
+}
+
