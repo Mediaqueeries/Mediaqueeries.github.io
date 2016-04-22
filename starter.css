@@ -52,12 +52,6 @@ header {
     100%{background-position:0% 50%}
 }
 
-@media (min-width: 900px) {
-    .logo--big {
-        display: inline;
-    }
-}
-
 /* --- End Header Section Stuff ---- */
 
 #title, #subtitle {
@@ -66,7 +60,7 @@ header {
 
 section {
     font-family: monospace;
-    font-size: 2em;
+    font-size: 3vw;
 }
 
 .wrap {
@@ -76,4 +70,15 @@ section {
 .wrap--first {
     margin-top: 2em;
 }
+
+@media (min-width: 900px) {
+    .logo--big {
+        display: inline;
+    }
+
+    section {
+        font-size: 1.5em;
+    }
+}
+
 
