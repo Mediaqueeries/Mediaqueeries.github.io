@@ -68,8 +68,10 @@ section {
 }
 
 .wrap--first {
-    margin-top: 2em;
+    margin-top: 3.5em;
 }
+
+/* --- Media queeri.es ---- */
 
 @media (min-width: 900px) {
     .logo--big {
@@ -80,5 +82,3 @@ section {
         font-size: 1.5em;
     }
 }
-
-
