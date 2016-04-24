@@ -74,12 +74,33 @@ body {
 }
 
 a {
-  color: #2EAFAC;
+    color: #2EAFAC;
+}
+
+.img--right {
+    float: right;
+    max-width: 10em;
+    margin: 1em;
+    margin-right: 0;
+    margin-top: 0;
+}
+
+.img--left {
+    float: left;
+    max-width: 10em;
+    margin: 1em;
+    margin-left: 0;
+    margin-top: 0;
 }
 
 .callout {
   border: 0.5em inset;
   padding: 1em;
+}
+
+small {
+  color: gray;
+  font-size: 0.5em;
 }
 
 /* --- Media queeri.es ---- */
