@@ -1,84 +1,118 @@
 header {
-    width: 100%;
     position: fixed;
-    padding: 10px;
-    top: 0; left: 0;
+    top: 0; left: 5%;
 }
 
 .logo{
-    background: black;
-    display: inline;
     color: white;
-    padding: 10px 0 10px 10px;
-    /* top: 30%; */
-    /* left: 30%; */
-    font-size: 1.25em;
-    font-family: futura, helvetica;
-    font-weight: bold;
-    -webkit-font-smoothing: auto;
+    font-family: courier, monospace;
+    display: block;
+    text-decoration: none;
+}
+
+.logo--media {
+    background: black;
+    padding: 0.6em 0.5em 0.6em 0.7em;
+    display: inline-block;
+}
+
+.logo--queeries{
+    padding: 0.6em 0.7em 0.6em 0.5em;
+    display: inline-block;
+
+    background: linear-gradient(270deg, #ff0000, #e2e343, #46de2a, #0059ff, #ff00ef);
+    background-size: 1200% 1200%;
+
+    -webkit-animation: RainbowMove 60s linear infinite;
+    -moz-animation: RainbowMove 60s linear infinite;
+    animation: RainbowMove 60s linear infinite;
 }
 
 .logo--big {
     display: none;
 }
 
-.logo--queeries{
-    padding: 10px 10px 11px 7px;
-    margin-left: 5px;
-    background: linear-gradient(270deg, #ff0000, #e2e343, #46de2a, #24e1d7, #0059ff, #ff00ef);
-
-    background-size: 1200% 1200%;
-
-    -webkit-animation: AnimationName 10s ease infinite;
-    -moz-animation: AnimationName 10s ease infinite;
-    animation: AnimationName 10s ease infinite;
-
+@-webkit-keyframes RainbowMove {
+    0%{background-position:0% 0%}
+    50%{background-position:100% 100%}
+    100%{background-position:0% 0%}
 }
-
-
-@-webkit-keyframes AnimationName {
-    0%{background-position:0% 50%}
-    50%{background-position:100% 50%}
-    100%{background-position:0% 50%}
+@-moz-keyframes RainbowMove {
+    0%{background-position:0% 0%}
+    50%{background-position:100% 100%}
+    100%{background-position:0% 0%}
 }
-@-moz-keyframes AnimationName {
-    0%{background-position:0% 50%}
-    50%{background-position:100% 50%}
-    100%{background-position:0% 50%}
-}
-@keyframes AnimationName {
-    0%{background-position:0% 50%}
-    50%{background-position:100% 50%}
-    100%{background-position:0% 50%}
+@keyframes RainbowMove {
+    0%{background-position:0% 0%}
+    50%{background-position:100% 100%}
+    100%{background-position:0% 0%}
 }
 
 /* --- End Header Section Stuff ---- */
 
-#title, #subtitle {
-    text-align: center;
+body {
+  font-size: 3vw;
+  font-family: courier, monospace;
+  margin: 0;
 }
 
-section {
-    font-family: monospace;
-    font-size: 3vw;
+#title span {
+    text-transform: uppercase;
+    color: grey;
+    font-size: 0.8em;
+    display: inline;
+    font-weight: normal;
+    display: inline;
 }
 
 .wrap {
-    padding: 0 15%;
+    padding: 0 5%;
 }
 
 .wrap--first {
     margin-top: 3.5em;
 }
 
+a {
+    color: #2EAFAC;
+}
+
+.img--right {
+    float: right;
+    max-width: 10em;
+    margin: 1em;
+    margin-right: 0;
+    margin-top: 0;
+}
+
+.img--left {
+    float: left;
+    max-width: 10em;
+    margin: 1em;
+    margin-left: 0;
+    margin-top: 0;
+}
+
+.callout {
+  border: 0.5em inset;
+  padding: 1em;
+}
+
+small {
+  color: gray;
+  font-size: 0.5em;
+}
+
 /* --- Media queeri.es ---- */
 
-@media (min-width: 900px) {
+@media only screen and (min-width: 900px) {
     .logo--big {
         display: inline;
     }
-
-    section {
+    body {
         font-size: 1.5em;
+    }
+    .logo {
+      font-size: 0.8em;
     }
 }
